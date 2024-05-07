@@ -1,0 +1,35 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces MGnify's amplicon pipeline}}{5}{figure.caption.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2}{\ignorespaces MGnify's rRNA-prediction subworkflow}}{11}{figure.caption.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3}{\ignorespaces Galaxy-ported version of rRNA-prediction subworkflow (part 1)}}{20}{figure.4.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Galaxy-ported version of rRNA-prediction subworkflow (part 2)}}{21}{figure.caption.25}%
+\contentsline {figure}{\numberline {5}{\ignorespaces MAPseq tool in Galaxy}}{22}{figure.caption.26}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Beta diversity-based benchmark. Dissimilarity between MGnify and Galaxy-ported pipeline, for MGnify human large intestine samples}}{23}{figure.caption.27}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Beta diversity-based benchmark. Dissimilarity between MGnify and Galaxy-ported pipeline, for MGnify soil samples}}{24}{figure.caption.28}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Differences of relative abundance between MGnify and Galaxy-ported pipeline at species rank for MGnify human large intestine samples}}{25}{figure.caption.29}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Differences of relative abundance between MGnify and Galaxy-ported pipeline at species rank for MGnify soil samples}}{26}{figure.caption.30}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Differences of relative abundance between MGnify and Galaxy-ported pipeline at genus rank for MGnify human large intestine samples}}{27}{figure.caption.31}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Differences of relative abundance between MGnify and Galaxy-ported pipeline at genus rank for MGnify soil samples}}{28}{figure.caption.32}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Beta diversity-based benchmark.Dissimilarity between MGnify and Kraken v2, for the MGnify human large intestine samples}}{29}{figure.caption.33}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Beta diversity-based benchmark. Dissimilarity between MGnify and Kraken v2, for MGnify soil samples}}{30}{figure.caption.34}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Beta diversity-based benchmark. Dissimilarity between expected composition and Galaxy-ported subworkflow, for mock samples}}{31}{figure.caption.35}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Beta diversity-based benchmark. Dissimilarity between expected composition and Kraken v2 for mock samples}}{32}{figure.caption.36}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Differences of relative abundance between expected composition, Galaxy-ported subworkflow, and Kraken v2 at genus rank for mock samples}}{33}{figure.caption.37}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Beta diversity-based benchmark. Dissimilarity between MGnify and MAPseq, for MAPseq inconsistency demonstration}}{34}{figure.caption.38}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {18}{\ignorespaces A Krona pie chart example}}{39}{figure.caption.39}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Differences of relative abundance between MGnify pipeline and Kraken v2 at genus rank for MGnify human large intestine samples}}{41}{figure.caption.41}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Differences of relative abundance between MGnify pipeline and Kraken v2 at genus rank for MGnify soil samples}}{42}{figure.caption.42}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Legend of MGnify human large intestine samples relative abundance plot, comparing MGnify and Galaxy-port at species rank}}{43}{figure.caption.43}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Legend of MGnify soil samples relative abundance plot, comparing MGnify and Galaxy-port at species rank}}{43}{figure.caption.44}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Legend of MGnify human large intestine samples relative abundance plot, comparing MGnify and Galaxy-port at genus rank}}{44}{figure.caption.45}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Legend of MGnify human large intestine samples relative abundance plot, comparing MGnify and Kraken v2 at genus rank}}{45}{figure.caption.46}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Legend of MGnify soil samples relative abundance plot, comparing MGnify and Galaxy-port at genus rank}}{46}{figure.caption.47}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Legend of MGnify soil samples relative abundance plot, comparing MGnify and Kraken v2 at genus rank}}{47}{figure.caption.48}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Legend of mock samples relative abundance plot, comparing expected composition, Galaxy-port, and Kraken v2}}{48}{figure.caption.49}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

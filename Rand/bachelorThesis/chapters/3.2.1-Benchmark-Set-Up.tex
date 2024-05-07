@@ -1,0 +1,34 @@
+\subsection{Benchmark Set-Up}\label{subsec:Benchmark-Set-Up}
+
+\subsubsection{MGnify samples benchmark Workflow}\label{subsubsec:Benchmark-Workflow-mgnify}
+The FASTA files containing the SSU quality checked reads and the analysis result files were downloaded from MGnify's website. The focus was exclusively on SSU reads to align with the scope of the bachelor thesis. As the published results on MGnify's website did not contain a Krona-compatible input file, one was formatted for each sample from the OTU table (otu\textunderscore tsv).
+The FASTA files and publicly available MGnify-compatible database files~\cite{noauthor_index_nodate} were subsequently uploaded to Galaxy. Where the FASTA files were packed into a data-set collection, and served as the input for the RNA-prediction subworkflow on Galaxy.\\
+After executing the subworkflow on Galaxy, the Krona inputs from both Galaxy and MGnify were grouped by taxonomy rank, and their abundances were aggregated. Subsequently, the tables were joined based on the taxon column. These combined tables featured a first column for taxon names, a second column for the corresponding MGnify abundances for each taxon, and a third column for the corresponding Galaxy abundances. These tables were employed as the input for calculating the beta diversity metrics, specifically the Bray-Curtis and Jaccard distances. The beta diversity workflow can be found in \Cref{appendix_galaxy_workflows}. This data was subsequently visualized in the form of plots (\Cref{fig:mgnify_human_gut_beta_div,fig:mgnify_soil_beta_div}). Scripts used for plotting the data can be found in \Cref{appendix_results}.\\
+Additionally, relative abundance tables, using total-sum scaling (TSS), were generated for the species and genus ranks taxonomic data in both soil and human large intestine samples. The computed relative abundance tables of MGnify and Galaxy were subsequently merged. Taxa in the output of Galaxy port different to MGnify were excluded to highlight the discrepancy in the resulting plots~(\Cref{fig:mgnify_human_gut_rel_abundance_s_level,fig:mgnify_soil_rel_abundace_s_level}).\\
+Furthermore, summary tables were generated including abundance, taxa as row indexes, and analysis IDs as column indexes.\par
+MGnify's quality-checked reads were additionally classified using Kraken v2, using its default configuration. Since SILVA 16S v132 for use with Kraken v2 was absent in Galaxy, Kraken v2 was used in conjunction with SILVA 16S v138. Kraken v2 report files were generated for subsequent conversion into Krona-compatible input files using the kreport2krona tool from the krakentools package~\cite{noauthor_tools-iuctoolskrakentools_nodate}. However, it is worth noting that Kraken v2's taxonomic lineage consists only of starting from kingdom and to genus ranks. Adjustments were made to align MGnify's output with this specific taxonomic lineage. 
+Subsequently, the beta diversity values were calculated and visualized in a similar manner as forementioned.
+
+\subsubsection{Mock samples benchmark Workflow}\label{subsubsec:Benchmark-Workflow-mock}
+
+Mock samples mentioned in \Cref{subsubsec:mock_samples} and their corresponding BIOM results files were downloaded. The FASTQ files were converted to FASTA format and subjected to classification twice: once using the rRNA-prediction subworkflow on Galaxy and the other using Kraken v2.
+The BIOM files contained taxonomic data, sample-analysis-IDs, expected abundance for each taxon, and the corresponding abundance values from different runs with each tool, all in conjunction with various databases. The samples and their expected taxonomic composition were extracted from the BIOM files and formatted to match Krona input file format. Given the taxonomic lineage of the mock samples and Kraken v2 consist only of ranks starting from kingdom and concluding with genus, outputs of Galaxy's rRNA-prediction subworkflow were adjusted to match this lineage.
+Subsequently, procedures similar to those mentioned in \Cref{subsubsec:Benchmark-Workflow-mgnify}, were employed to generate beta diversity and relative abundance plots. Taxa in the outputs of Galaxy-port and Kraken v2 different to the expected taxonomic composition were excluded to highlight the discrepancy in the resulting plots.
+
+\subsubsection{Dissimilarity Measures}\label{subsubsec:Dissimilarity-Measures}
+
+Beta diversity is a measure that quantifies the dissimilarity between microbial environments based on taxonomic composition. This thesis employed the Bray-Curtis and Jaccard distance beta diversity metrics, to assess the differences between the results of the different pipelines/tools. Beta diversity was also employed to assess the differences between the achieved results of the Galaxy ported version and Kraken v2 using the mock samples. The beta diversity measurements using the different metrics were applied on the whole abundance table of each output, and also on each taxonomic rank separately.\\
+Bray Curtis is a quantitative beta diversity metric, based on occurrence data (abundance). The Bray Curtis distance quantifies the dissimilarity between two samples, A and B by employing the equation:
+\[
+BC(A,B) = \frac{\sum_{i}^{} |X_{iA} - X_{iB}|}{\sum_{i}^{} X_{iA} + X_{iB}} \tag*{\cite{ricotta_properties_2017}}
+\]
+
+Where:
+\begin{itemize}
+    \item \(X_{iA}\) represents the frequency of taxon \(i\) in sample A.
+    \item \(X_{iB}\) represents the frequency of taxon \(i\) in sample B.
+\end{itemize}
+Jaccard distance is a qualitative beta diversity metric measuring the dissimilarity between samples, with focus on the presence/absence of taxa, regardless of their abundance.\\ Given two taxa sets A and B, Jaccard distance is calculated by employing the equation:
+\[
+J(A,B) = 1 - \frac{|A \cap B|}{|A \cup B|} \tag*{\cite{levandowsky_distance_1971}}
+\]
