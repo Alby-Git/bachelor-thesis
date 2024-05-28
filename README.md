@@ -145,19 +145,19 @@ The tools and methodologies developed in this project can be applied in various 
 ## Roadmap
 
 **Taxpasta**
-- [x] **Understanding Taxpasta**
+- [ ] **Understanding Taxpasta**
   - Research [Taxpasta](https://github.com/pelkmanslab/taxpasta) tool and its mechanisms.
-- [x] **Blueprint for Taxpasta**
+- [ ] **Blueprint for Taxpasta**
   - Develop a plan for wrapping Taxpasta using Planemo.
-- [x] **Implement Taxpasta in Galaxy**
+- [ ] **Implement Taxpasta in Galaxy**
   - Successfully wrap Taxpasta and demonstrate its functionality on Galaxy.
-- [x] **Contribute to IUC**
+- [ ] **Contribute to IUC**
   - Prepare and submit a pull-request to integrate Taxpasta into the IUC main branch. (Here)[https://github.com/galaxyproject/tools-iuc/pull/5719]
 
 **Opal**
-- [x] **Explore Opal**
+- [ ] **Explore Opal**
   - Learn about the Opal tool and its applications.
-- [x] **Plan Opal Integration**
+- [ ] **Plan Opal Integration**
   - Design a strategy for incorporating Opal into Galaxy.
 - [ ] **Galaxy Implementation**
   - Execute the integration of Opal into the Galaxy platform.
