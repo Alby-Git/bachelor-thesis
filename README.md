@@ -7,7 +7,7 @@
     <img src="images/galaxy_project_logo.png" alt="Logo" width="250" height="80">
   </a>
 
-<h2 align="center">Bachelor's Project </h2>
+<h2 align="center">Bachelor's Thesis </h2>
   <p align="center">
     Port, improve, and benchmark read-based MGnify analysis pipeline for microbiome data using the Galaxy framework
   <h4 align="center"> by Albert Ratschinki </h4>
