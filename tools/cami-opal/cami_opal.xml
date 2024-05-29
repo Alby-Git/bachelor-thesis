@@ -9,7 +9,7 @@
         mkdir -p output inputs &&
 
         #for $i, $file in enumerate($input_files):
-            ln -s '$file' './inputs/$file.element_identifier' &&
+            ln -s '$file.file' './inputs/$file.file.element_identifier' &&
         #end for
 
         opal.py
@@ -51,8 +51,8 @@
         #if $normalized_unifrac:
             --normalized_unifrac
         #end if
-        #for $i, $bin in enumerate($input_files):
-            'inputs/$bin.element_identifier'
+        #for $i, $file in enumerate($input_files):
+            'inputs/$file.file.element_identifier'
         #end for
     ]]>
     </command>
