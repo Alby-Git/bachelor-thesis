@@ -7,8 +7,9 @@
     <command detect_errors="exit_code">
     <![CDATA[
         taxonkit profile2cami
-        --abundance-field ${abundance_field}
-        --taxid-field ${taxid_field}
+        --data-dir '${taxonomy.fields.path}'
+        --abundance-field '${abundance_field}'
+        --taxid-field '${taxid_field}'
         #if $percentage:
             -p
         #end if
@@ -26,11 +27,16 @@
         #end if
         --show-rank '${show_rank}'
         ${input_file}
-        > output/cami_output.tsv
+        > '${cami_output}'
     ]]>
     </command>
     <inputs>
         <param name="input_file" type="data" format="txt" label="Input Profile File" help="Input the tab-delimited profile file with TaxId and abundance columns." />
+        <param argument="--taxonomy" type="select" label="NCBI taxonomy" help="To have actual human-readable taxon names in the standardised output">
+            <options from_data_table="ncbi_taxonomy">
+                <validator message="No NCBI database is available" type="no_options"/>
+            </options>
+        </param>
         <param name="abundance_field" type="integer" value="2" label="Abundance Field Index" help="Field index of abundance in the input data." />
         <param name="taxid_field" type="integer" value="1" label="TaxId Field Index" help="Field index of TaxId in the input data." />
         <param name="percentage" type="boolean" value="false" label="Abundance in Percentage" help="Check if the abundance values are in percentage." />
@@ -41,7 +47,7 @@
         <param name="show_rank" type="text" value="superkingdom,phylum,class,order,family,genus,species,strain" label="Show Ranks" help="Specify the ranks to show in the result file." />
     </inputs>
     <outputs>
-        <data name="cami_output" format="tsv" from_work_dir="output/cami_output.tsv" label="Converted CAMI Output" />
+        <data name="cami_output" format="tsv" label="Converted CAMI Output" />
     </outputs>
     <tests>
         <test expect_num_outputs="1">
