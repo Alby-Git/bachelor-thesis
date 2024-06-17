@@ -50,13 +50,33 @@
         <data name="cami_output" format="tsv" label="Converted CAMI Output" />
     </outputs>
     <tests>
+        <!-- Test 1: Basic functionality with default parameters -->
         <test expect_num_outputs="1">
-            <param name="input_file" value="test_profile.txt" ftype="txt" />
-            <output name="cami_output">
-                <assert_contents>
-                    <has_text text="CAMI" n="1" />
-                </assert_contents>
-            </output>
+            <param name="input_file" value="abundance.tsv" ftype="tsv" />
+            <output name="cami_output" file="output1_basic_functionality.tsv" />
+        </test>
+
+        <!-- Test 2: Using percentage flag -->
+        <test expect_num_outputs="1">
+            <param name="input_file" value="abundance.tsv" ftype="tsv" />
+            <param name="percentage" value="true" />
+            <output name="cami_output" file="output2_percentage_flag.tsv" />
+        </test>
+
+        <!-- Test 3: Recomputing abundance with deleted TaxIds -->
+        <test expect_num_outputs="1">
+            <param name="input_file" value="abundance.tsv" ftype="tsv" />
+            <param name="recompute_abd" value="true" />
+            <output name="cami_output" file="output3_recompute_abd.tsv" />
+        </test>
+
+        <!-- Test 4: Profile2Cami with all parameters checked -->
+        <test expect_num_outputs="1">
+            <param name="input_file" value="abundance.tsv" ftype="tsv" />
+            <param name="percentage" value="true" />
+            <param name="recompute_abd" value="true" />
+            <param name="keep_zero" value="true"  />
+            <output name="cami_output" file="output4_all_param.tsv" />
         </test>
     </tests>
     <help>

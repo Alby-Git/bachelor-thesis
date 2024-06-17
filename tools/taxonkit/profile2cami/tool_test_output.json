@@ -1,0 +1,308 @@
+{
+    "summary": {
+        "num_errors": 0,
+        "num_failures": 0,
+        "num_skips": 0,
+        "num_tests": 4
+    },
+    "tests": [
+        {
+            "data": {
+                "inputs": {
+                    "input_file": {
+                        "id": "bc63116c30270413",
+                        "src": "hda"
+                    }
+                },
+                "job": {
+                    "command_line": "taxonkit profile2cami --data-dir '/home/albertd/Documents/University/bachelor-thesis/tools/taxonkit/profile2cami/test-data/test-db' --abundance-field '2' --taxid-field '1' --show-rank 'superkingdom,phylum,class,order,family,genus,species,strain' /tmp/tmp7pmibcls/files/f/8/6/dataset_f8681908-1369-4042-a6d6-3babb369c2b1.dat > '/tmp/tmp7pmibcls/job_working_directory/000/2/outputs/dataset_76855294-6a63-4c67-bd1b-641bb4a1620f.dat'",
+                    "command_version": "",
+                    "copied_from_job_id": null,
+                    "create_time": "2024-06-17T09:17:28.107649",
+                    "dependencies": [],
+                    "exit_code": 0,
+                    "external_id": "183506",
+                    "galaxy_version": "24.0",
+                    "handler": null,
+                    "history_id": "bc63116c30270413",
+                    "id": "6d7a3a6c7dff857c",
+                    "inputs": {
+                        "input_file": {
+                            "id": "bc63116c30270413",
+                            "src": "hda",
+                            "uuid": "f8681908-1369-4042-a6d6-3babb369c2b1"
+                        }
+                    },
+                    "job_messages": [],
+                    "job_metrics": [],
+                    "job_runner_name": null,
+                    "job_stderr": "",
+                    "job_stdout": "",
+                    "model_class": "Job",
+                    "output_collections": {},
+                    "outputs": {
+                        "cami_output": {
+                            "id": "6d7a3a6c7dff857c",
+                            "src": "hda",
+                            "uuid": "76855294-6a63-4c67-bd1b-641bb4a1620f"
+                        }
+                    },
+                    "params": {
+                        "__input_ext": "\"input\"",
+                        "abundance_field": "\"2\"",
+                        "chromInfo": "\"/home/albertd/git/galaxy/tool-data/shared/ucsc/chrom/?.len\"",
+                        "dbkey": "\"?\"",
+                        "keep_zero": "false",
+                        "percentage": "false",
+                        "recompute_abd": "false",
+                        "sample_id": "\"\"",
+                        "show_rank": "\"superkingdom,phylum,class,order,family,genus,species,strain\"",
+                        "taxid_field": "\"1\"",
+                        "taxonomy": "\"test-db-tox\"",
+                        "taxonomy_id": "\"\""
+                    },
+                    "state": "ok",
+                    "stderr": "",
+                    "stdout": "",
+                    "tool_id": "profile2cami",
+                    "tool_stderr": "",
+                    "tool_stdout": "",
+                    "update_time": "2024-06-17T09:17:35.615025",
+                    "user_email": "planemo@galaxyproject.org"
+                },
+                "status": "success",
+                "test_index": 0,
+                "time_seconds": 20.580190658569336,
+                "tool_id": "profile2cami",
+                "tool_version": "0.16.0+galaxy0"
+            },
+            "has_data": true,
+            "id": "profile2cami-0"
+        },
+        {
+            "data": {
+                "inputs": {
+                    "input_file": {
+                        "id": "c29908e05638f3ca",
+                        "src": "hda"
+                    },
+                    "percentage": true
+                },
+                "job": {
+                    "command_line": "taxonkit profile2cami --data-dir '/home/albertd/Documents/University/bachelor-thesis/tools/taxonkit/profile2cami/test-data/test-db' --abundance-field '2' --taxid-field '1' -p --show-rank 'superkingdom,phylum,class,order,family,genus,species,strain' /tmp/tmp7pmibcls/files/b/1/7/dataset_b1798b19-c747-4701-ba4f-1441e9279fd0.dat > '/tmp/tmp7pmibcls/job_working_directory/000/4/outputs/dataset_3203b54e-88ff-4b2e-9ee4-1cae72dcd4fb.dat'",
+                    "command_version": "",
+                    "copied_from_job_id": null,
+                    "create_time": "2024-06-17T09:17:46.531985",
+                    "dependencies": [],
+                    "exit_code": 0,
+                    "external_id": "184111",
+                    "galaxy_version": "24.0",
+                    "handler": null,
+                    "history_id": "6d7a3a6c7dff857c",
+                    "id": "d42bceecb07c7973",
+                    "inputs": {
+                        "input_file": {
+                            "id": "c29908e05638f3ca",
+                            "src": "hda",
+                            "uuid": "b1798b19-c747-4701-ba4f-1441e9279fd0"
+                        }
+                    },
+                    "job_messages": [],
+                    "job_metrics": [],
+                    "job_runner_name": null,
+                    "job_stderr": "",
+                    "job_stdout": "",
+                    "model_class": "Job",
+                    "output_collections": {},
+                    "outputs": {
+                        "cami_output": {
+                            "id": "d42bceecb07c7973",
+                            "src": "hda",
+                            "uuid": "3203b54e-88ff-4b2e-9ee4-1cae72dcd4fb"
+                        }
+                    },
+                    "params": {
+                        "__input_ext": "\"input\"",
+                        "abundance_field": "\"2\"",
+                        "chromInfo": "\"/home/albertd/git/galaxy/tool-data/shared/ucsc/chrom/?.len\"",
+                        "dbkey": "\"?\"",
+                        "keep_zero": "false",
+                        "percentage": "true",
+                        "recompute_abd": "false",
+                        "sample_id": "\"\"",
+                        "show_rank": "\"superkingdom,phylum,class,order,family,genus,species,strain\"",
+                        "taxid_field": "\"1\"",
+                        "taxonomy": "\"test-db-tox\"",
+                        "taxonomy_id": "\"\""
+                    },
+                    "state": "ok",
+                    "stderr": "",
+                    "stdout": "",
+                    "tool_id": "profile2cami",
+                    "tool_stderr": "",
+                    "tool_stdout": "",
+                    "update_time": "2024-06-17T09:17:54.146173",
+                    "user_email": "planemo@galaxyproject.org"
+                },
+                "status": "success",
+                "test_index": 1,
+                "time_seconds": 18.54970932006836,
+                "tool_id": "profile2cami",
+                "tool_version": "0.16.0+galaxy0"
+            },
+            "has_data": true,
+            "id": "profile2cami-1"
+        },
+        {
+            "data": {
+                "inputs": {
+                    "input_file": {
+                        "id": "0a62fdb4d27249b9",
+                        "src": "hda"
+                    },
+                    "recompute_abd": true
+                },
+                "job": {
+                    "command_line": "taxonkit profile2cami --data-dir '/home/albertd/Documents/University/bachelor-thesis/tools/taxonkit/profile2cami/test-data/test-db' --abundance-field '2' --taxid-field '1' -R --show-rank 'superkingdom,phylum,class,order,family,genus,species,strain' /tmp/tmp7pmibcls/files/7/8/f/dataset_78f79d4a-29ba-4c05-b809-7fc8238a41b8.dat > '/tmp/tmp7pmibcls/job_working_directory/000/6/outputs/dataset_224d4c25-07c2-48c8-b882-a494e1eeea10.dat'",
+                    "command_version": "",
+                    "copied_from_job_id": null,
+                    "create_time": "2024-06-17T09:18:06.268942",
+                    "dependencies": [],
+                    "exit_code": 0,
+                    "external_id": "184711",
+                    "galaxy_version": "24.0",
+                    "handler": null,
+                    "history_id": "c29908e05638f3ca",
+                    "id": "54595ecb03cbc56f",
+                    "inputs": {
+                        "input_file": {
+                            "id": "0a62fdb4d27249b9",
+                            "src": "hda",
+                            "uuid": "78f79d4a-29ba-4c05-b809-7fc8238a41b8"
+                        }
+                    },
+                    "job_messages": [],
+                    "job_metrics": [],
+                    "job_runner_name": null,
+                    "job_stderr": "",
+                    "job_stdout": "",
+                    "model_class": "Job",
+                    "output_collections": {},
+                    "outputs": {
+                        "cami_output": {
+                            "id": "54595ecb03cbc56f",
+                            "src": "hda",
+                            "uuid": "224d4c25-07c2-48c8-b882-a494e1eeea10"
+                        }
+                    },
+                    "params": {
+                        "__input_ext": "\"input\"",
+                        "abundance_field": "\"2\"",
+                        "chromInfo": "\"/home/albertd/git/galaxy/tool-data/shared/ucsc/chrom/?.len\"",
+                        "dbkey": "\"?\"",
+                        "keep_zero": "false",
+                        "percentage": "false",
+                        "recompute_abd": "true",
+                        "sample_id": "\"\"",
+                        "show_rank": "\"superkingdom,phylum,class,order,family,genus,species,strain\"",
+                        "taxid_field": "\"1\"",
+                        "taxonomy": "\"test-db-tox\"",
+                        "taxonomy_id": "\"\""
+                    },
+                    "state": "ok",
+                    "stderr": "",
+                    "stdout": "",
+                    "tool_id": "profile2cami",
+                    "tool_stderr": "",
+                    "tool_stdout": "",
+                    "update_time": "2024-06-17T09:18:13.418254",
+                    "user_email": "planemo@galaxyproject.org"
+                },
+                "status": "success",
+                "test_index": 2,
+                "time_seconds": 19.12242317199707,
+                "tool_id": "profile2cami",
+                "tool_version": "0.16.0+galaxy0"
+            },
+            "has_data": true,
+            "id": "profile2cami-2"
+        },
+        {
+            "data": {
+                "inputs": {
+                    "input_file": {
+                        "id": "35b0092de9406414",
+                        "src": "hda"
+                    },
+                    "keep_zero": true,
+                    "percentage": true,
+                    "recompute_abd": true
+                },
+                "job": {
+                    "command_line": "taxonkit profile2cami --data-dir '/home/albertd/Documents/University/bachelor-thesis/tools/taxonkit/profile2cami/test-data/test-db' --abundance-field '2' --taxid-field '1' -p -R -0 --show-rank 'superkingdom,phylum,class,order,family,genus,species,strain' /tmp/tmp7pmibcls/files/e/9/2/dataset_e9224487-185d-4902-8380-6d630af8136d.dat > '/tmp/tmp7pmibcls/job_working_directory/000/8/outputs/dataset_331245dd-2494-4e28-86b6-36001c0df13c.dat'",
+                    "command_version": "",
+                    "copied_from_job_id": null,
+                    "create_time": "2024-06-17T09:18:28.887006",
+                    "dependencies": [],
+                    "exit_code": 0,
+                    "external_id": "186375",
+                    "galaxy_version": "24.0",
+                    "handler": null,
+                    "history_id": "d42bceecb07c7973",
+                    "id": "21c65a95dd1a54c5",
+                    "inputs": {
+                        "input_file": {
+                            "id": "35b0092de9406414",
+                            "src": "hda",
+                            "uuid": "e9224487-185d-4902-8380-6d630af8136d"
+                        }
+                    },
+                    "job_messages": [],
+                    "job_metrics": [],
+                    "job_runner_name": null,
+                    "job_stderr": "",
+                    "job_stdout": "",
+                    "model_class": "Job",
+                    "output_collections": {},
+                    "outputs": {
+                        "cami_output": {
+                            "id": "21c65a95dd1a54c5",
+                            "src": "hda",
+                            "uuid": "331245dd-2494-4e28-86b6-36001c0df13c"
+                        }
+                    },
+                    "params": {
+                        "__input_ext": "\"input\"",
+                        "abundance_field": "\"2\"",
+                        "chromInfo": "\"/home/albertd/git/galaxy/tool-data/shared/ucsc/chrom/?.len\"",
+                        "dbkey": "\"?\"",
+                        "keep_zero": "true",
+                        "percentage": "true",
+                        "recompute_abd": "true",
+                        "sample_id": "\"\"",
+                        "show_rank": "\"superkingdom,phylum,class,order,family,genus,species,strain\"",
+                        "taxid_field": "\"1\"",
+                        "taxonomy": "\"test-db-tox\"",
+                        "taxonomy_id": "\"\""
+                    },
+                    "state": "ok",
+                    "stderr": "",
+                    "stdout": "",
+                    "tool_id": "profile2cami",
+                    "tool_stderr": "",
+                    "tool_stdout": "",
+                    "update_time": "2024-06-17T09:18:37.339037",
+                    "user_email": "planemo@galaxyproject.org"
+                },
+                "status": "success",
+                "test_index": 3,
+                "time_seconds": 23.297433614730835,
+                "tool_id": "profile2cami",
+                "tool_version": "0.16.0+galaxy0"
+            },
+            "has_data": true,
+            "id": "profile2cami-3"
+        }
+    ],
+    "version": "0.1"
+}

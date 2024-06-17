@@ -1,0 +1,32 @@
+2024-06-17 09:42:39,562 INFO /home/albertd/miniconda3/envs/opal/bin/opal.py -g data/goldstandard_low_1.bin data/test1.profile data/test2.profile -l 'Test1, Test2' -o output_dir/test
+2024-06-17 09:42:39,563 INFO Loading profiles...
+2024-06-17 09:42:39,564 INFO done
+2024-06-17 09:42:39,564 INFO Computing metrics...
+2024-06-17 09:42:39,650 WARNING Skipping assessment of Test1 for sample sample1. Make sure the SampleID of the gold standard and the profile are identical.
+
+2024-06-17 09:42:39,651 WARNING Skipping assessment of Test2 for sample sample1. Make sure the SampleID of the gold standard and the profile are identical.
+
+2024-06-17 09:42:39,651 CRITICAL No profile could be evaluated.
+2024-06-17 09:42:58,453 INFO /home/albertd/miniconda3/envs/opal/bin/opal.py -g data/goldstandard_low_1.bin data/test1.profile data/test2.profile -l 'Test1, Test2' -o output_dir/test
+2024-06-17 09:42:58,453 INFO Loading profiles...
+2024-06-17 09:42:58,455 INFO done
+2024-06-17 09:42:58,455 INFO Computing metrics...
+2024-06-17 09:42:58,543 WARNING Skipping assessment of Test1 for sample sample1. Make sure the SampleID of the gold standard and the profile are identical.
+
+2024-06-17 09:42:58,544 WARNING Skipping assessment of Test2 for sample sample1. Make sure the SampleID of the gold standard and the profile are identical.
+
+2024-06-17 09:42:58,544 CRITICAL No profile could be evaluated.
+2024-06-17 09:44:00,042 INFO /home/albertd/miniconda3/envs/opal/bin/opal.py -g data/small1.profile data/test1.profile -l Test1 -o output_dir/test
+2024-06-17 09:44:00,042 INFO Loading profiles...
+2024-06-17 09:44:00,043 INFO done
+2024-06-17 09:44:00,043 INFO Computing metrics...
+2024-06-17 09:44:00,078 WARNING Skipping assessment of Test1 for sample sample1. Make sure the SampleID of the gold standard and the profile are identical.
+
+2024-06-17 09:44:00,078 CRITICAL No profile could be evaluated.
+2024-06-17 10:14:18,079 INFO /home/albertd/miniconda3/envs/opal/bin/opal.py -g data/goldstandard_low_1.bin data/test1.profile -l Test1 -o output_dir/test
+2024-06-17 10:14:18,079 INFO Loading profiles...
+2024-06-17 10:14:18,080 INFO done
+2024-06-17 10:14:18,080 INFO Computing metrics...
+2024-06-17 10:14:18,173 WARNING Skipping assessment of Test1 for sample sample1. Make sure the SampleID of the gold standard and the profile are identical.
+
+2024-06-17 10:14:18,174 CRITICAL No profile could be evaluated.

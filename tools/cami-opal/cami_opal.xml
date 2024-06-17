@@ -5,65 +5,68 @@
     </macros>
     <expand macro="requirements" />
     <command detect_errors="exit_code">
-    <![CDATA[
-        mkdir -p output inputs &&
+        <![CDATA[
+            mkdir -p output inputs &&
+            #for $i, $file in enumerate($input_files):
+                ln -s '$file.file' './inputs/$file.file.element_identifier' &&
+            #end for
+        
+            opal.py
+            -g '${gold_standard_file}'
+            -o output
+            #if $normalize:
+                -n
+            #end if
+            #if $filter:
+                -f '${filter}'
+            #end if
+            #if $plot_abundances:
+                -p
+            #end if
+            #if $labels:
+                -l '${labels}'
+            #end if
+            #if $time:
+                -t '${time}'
+            #end if
+            #if $memory:
+                -m '${memory}'
+            #end if
+            #if $desc:
+                -d '${desc}'
+            #end if
+            #if $ranks:
+                -r '${ranks}'
+            #end if
+            #if $metrics_plot_rel:
+                --metrics_plot_rel '${metrics_plot_rel}'
+            #end if
+            #if $metrics_plot_abs:
+                --metrics_plot_abs '${metrics_plot_abs}'
+            #end if
+            #if $branch_length_function:
+                -b '${branch_length_function}'
+            #end if
+            #if $normalized_unifrac:
+                --normalized_unifrac
+            #end if
+            #for $i, $file in enumerate($input_files):
+                'inputs/$file.file.element_identifier'
+            #end for &&
 
-        #for $i, $file in enumerate($input_files):
-            ln -s '$file.file' './inputs/$file.file.element_identifier' &&
-        #end for
-
-        opal.py
-        -g '${gold_standard_file}'
-        -o output
-        #if $normalize:
-            -n
-        #end if
-        #if $filter:
-            -f $filter
-        #end if
-        #if $plot_abundances:
-            -p
-        #end if
-        #if $labels:
-            -l $labels
-        #end if
-        #if $time:
-            -t $time
-        #end if
-        #if $memory:
-            -m $memory
-        #end if
-        #if $desc:
-            -d '${desc}'
-        #end if
-        #if $ranks:
-            -r $ranks
-        #end if
-        #if $metrics_plot_rel:
-            --metrics_plot_rel $metrics_plot_rel
-        #end if
-        #if $metrics_plot_abs:
-            --metrics_plot_abs $metrics_plot_abs
-        #end if
-        #if $branch_length_function:
-            -b '$branch_length_function'
-        #end if
-        #if $normalized_unifrac:
-            --normalized_unifrac
-        #end if
-        #for $i, $file in enumerate($input_files):
-            'inputs/$file.file.element_identifier'
-        #end for
-    ]]>
+            zip -r output.zip output
+        ]]>
     </command>
+        
+
     <inputs>
-        <param argument="--gold_standard_file" format="tabular" type="data"
+        <param argument="--gold_standard_file" type="data"
             label="Gold standard file"
-            help="Input the gold standard file here" />
+            help="Input the gold standard file here. Recommended format: CAMI Profiling Bioboxes or BIOM format." />
         <repeat name="input_files" title="Input files"
-            help="Enter multiple input files">
-            <param name="file" format="tabular" type="data"
-                label="Input files" />
+            help="Enter multiple input files. Recommended format: CAMI Profiling Bioboxes or BIOM format.">
+            <param name="file" type="data"
+                label="Input file" />
         </repeat>
         <param name="normalize" type="boolean" optional="true"
             label="Normalize samples" />
@@ -102,15 +105,16 @@
             help="Compute normalized version of weighted UniFrac by dividing by the theoretical max unweighted UniFrac" />
     </inputs>
     <outputs>
-        <data name="html" format="html" from_work_dir="output/index.html" label="${tool.name}: HTML" />
+        <data name="output_dir" format="zip" label="${tool.name}: .ZIP" />
+        <data name="html" format="html" from_work_dir="output/results.html" label="${tool.name}: HTML" />
         <data name="result" format="tabular" from_work_dir="output/results.tsv" label="${tool.name}: Results" />
     </outputs>
     <tests>
         <test expect_num_outputs="2">
-            <param name="gold_standard_file" value="test_gold.tsv" ftype="tabular" />
+            <param name="gold_standard_file" value="test_gold" />
             <repeat name="input_files">
-                <param name="file" value="test_input1.tsv" ftype="tabular" />
-                <param name="file" value="test_input2.tsv" ftype="tabular" />
+                <param name="file" value="test_input1" />
+                <param name="file" value="test_input2" />
             </repeat>
             <param name="normalize" value="true" />
             <param name="filter" value="5" />
@@ -158,10 +162,10 @@
         OPAL requires the following inputs:
 
         1. **Gold Standard File**
-            - This file is essential for the evaluation and should be in tabular format.
+            - This file is essential for the evaluation and should be in BIOM format.
 
         2. **Profiles Files**
-            - Multiple profiles files are required for evaluation. These files should also be in tabular format.
+            - Multiple profiles files are required for evaluation. These files should be in CAMI Profiling Bioboxes format or BIOM format.
 
         **Optional Arguments**
 
