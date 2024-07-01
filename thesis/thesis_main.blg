@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'thesis_main.blg'
+[121] biber-MSWIN64:340> INFO - === 
+[161] Biber.pm:419> INFO - Reading 'thesis_main.bcf'
+[283] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
+[299] Biber.pm:4419> INFO - Processing section 0
+[312] Biber.pm:4610> INFO - Looking for bibtex file 'bib/references.bib' for section 0
+[373] bibtex.pm:1713> INFO - LaTeX decoding ...
+[516] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/references.bib'
+[590] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[590] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[591] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[591] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[599] bbl.pm:660> INFO - Writing 'thesis_main.bbl' with encoding 'UTF-8'
+[603] bbl.pm:763> INFO - Output to thesis_main.bbl
+[604] Biber.pm:131> WARN - Duplicate entry key: 'kalvari_non-coding_2018' in file 'bib/references.bib', skipping ...
+[604] Biber.pm:133> INFO - WARNINGS: 1

@@ -1,0 +1,36 @@
+\chapter{Introduction}\label{chap:Introduction}
+
+Metagenomics is an expansive field focused on the analysis of genetic material recovered directly from environmental samples. 
+This approach provides a comprehensive view of the microbial communities present in a given habitat.
+A critical component of metagenomic analysis involves taxonomic profiling, which identifies and categorizes the various microorganisms within a sample. 
+This profiling is essential for understanding microbial diversity, ecosystem functioning, and the roles of specific microbes in health and disease.
+
+Various tools and pipelines have been developed to facilitate taxonomic profiling, each leveraging different databases and algorithms.
+Among these tools, Kraken2 and Bracken have gained prominence for their high accuracy and efficiency in classifying reads from metagenomic samples.
+Kraken2 employs a k-mer based approach to classify reads, while Bracken refines these classifications to improve abundance estimates. 
+Similarly, MetaPhlAn and mOTUs are widely used for profiling microbial communities using marker genes.
+
+Despite the availability of these tools, there is no consensus on a single best approach for metagenomic analysis. 
+Comparative studies are necessary to evaluate their performance in terms of time efficiency, memory usage, and accuracy. 
+These studies help in identifying the strengths and limitations of each tool, providing valuable insights for selecting the appropriate pipeline for specific research needs.
+
+
+\input{chapters/1.1-CAMI-challange}
+\input{chapters/1.2-Galaxy}
+
+\newpage
+\section{Aim of this thesis}\label{aim_of_thesis}
+The primary aim of this thesis is to benchmark the performance of Kraken2, Bracken, MetaPhlAn, and mOTUs using the CAMI challenge dataset as a gold standard. 
+The analysis will be conducted within the Galaxy framework to leverage its robust computational resources and workflow management capabilities. 
+This study will compare the taxonomic profiling outputs of these tools against the gold standard provided by CAMI, using Cami Opal for detailed comparative analysis.
+By integrating these tools into Galaxy and conducting a thorough benchmarking study, 
+this thesis seeks to provide insights into their relative performance and suitability for different metagenomic research scenarios. Specifically, the thesis will:
+\begin{itemize}
+    \item Evaluate the accuracy of Kraken2, Bracken, MetaPhlAn, and mOTUs in taxonomic profiling against the CAMI gold standard dataset.
+    \item Assess the computational efficiency and memory usage of these tools within the Galaxy framework.
+    \item Identify the strengths and weaknesses of each tool, providing recommendations for their use in various metagenomic analysis contexts.
+    \item Contribute to the refinement and improvement of metagenomic analysis pipelines by highlighting areas for future development.
+\end{itemize}
+The outcomes of this research will not only highlight the strengths and weaknesses of
+each tool but also contribute to the ongoing efforts to refine metagenomic analysis pipelines, 
+ultimately enhancing the accuracy and reliability of microbial community studies.

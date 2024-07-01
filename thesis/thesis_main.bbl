@@ -1,0 +1,253 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{wood_improved_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a7d673d0c99755d221f480b366f25808}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Derrick\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3a9bafc6f5116ef2f7d85aa4eac44399}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a8ce1a82e3e69aab1bb83e47384c8977}{%
+           family={Langmead},
+           familyi={L\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe5d464352db2fdda08847ea257233bd}
+      \strng{fullhash}{fe5d464352db2fdda08847ea257233bd}
+      \strng{bibnamehash}{fe5d464352db2fdda08847ea257233bd}
+      \strng{authorbibnamehash}{fe5d464352db2fdda08847ea257233bd}
+      \strng{authornamehash}{fe5d464352db2fdda08847ea257233bd}
+      \strng{authorfullhash}{fe5d464352db2fdda08847ea257233bd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although Kraken’s k-mer-based approach provides a fast taxonomic classification of metagenomic sequence data, its large memory requirements can be limiting for some applications. Kraken 2 improves upon Kraken 1 by reducing memory usage by 85\%, allowing greater amounts of reference genomic data to be used, while maintaining high accuracy and increasing speed fivefold. Kraken 2 also introduces a translated search mode, providing increased sensitivity in viral metagenomics analysis.}
+      \field{issn}{1474-760X}
+      \field{journaltitle}{Genome Biology}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{Improved metagenomic analysis with {Kraken} 2}
+      \field{urlday}{9}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{volume}{20}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{257}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s13059-019-1891-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s13059-019-1891-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s13059-019-1891-0
+      \endverb
+      \keyw{Alignment-free methods,Metagenomics,Metagenomics classification,Microbiome,Minimizers,Probabilistic data structures}
+    \endentry
+    \entry{noauthor_kraken2docsmanualmarkdown_nodate}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The second version of the Kraken taxonomic sequence classification system - DerrickWood/kraken2}
+      \field{journaltitle}{GitHub}
+      \field{title}{kraken2/docs/{MANUAL}.markdown at master · {DerrickWood}/kraken2}
+      \field{urlday}{2}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown
+      \endverb
+      \verb{url}
+      \verb https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown
+      \endverb
+    \endentry
+    \entry{almeida_benchmarking_2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e7f03b04ce84107cc8236025864fedc7}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8577a94f7ac94e1c8e33a605eb08c59e}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Alex\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c187c38966222b7cac30dea65c9de8b8}{%
+           family={Tarkowska},
+           familyi={T\bibinitperiod},
+           given={Aleksandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=338463f2bfffbecabb04fc01381c114b}{%
+           family={Finn},
+           familyi={F\bibinitperiod},
+           given={Robert\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{392986007b8d743506e7605ee63af05e}
+      \strng{fullhash}{bcdf9d839aa6d8816a2bafa112dcb530}
+      \strng{bibnamehash}{392986007b8d743506e7605ee63af05e}
+      \strng{authorbibnamehash}{392986007b8d743506e7605ee63af05e}
+      \strng{authornamehash}{392986007b8d743506e7605ee63af05e}
+      \strng{authorfullhash}{bcdf9d839aa6d8816a2bafa112dcb530}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{BACKGROUND: Taxonomic profiling of ribosomal RNA (rRNA) sequences has been the accepted norm for inferring the composition of complex microbial ecosystems. Quantitative Insights Into Microbial Ecology (QIIME) and mothur have been the most widely used taxonomic analysis tools for this purpose, with MAPseq and QIIME 2 being two recently released alternatives. However, no independent and direct comparison between these four main tools has been performed. Here, we compared the default classifiers of MAPseq, mothur, QIIME, and QIIME 2 using synthetic simulated datasets comprised of some of the most abundant genera found in the human gut, ocean, and soil environments. We evaluate their accuracy when paired with both different reference databases and variable sub-regions of the 16S rRNA gene. FINDINGS: We show that QIIME 2 provided the best recall and F-scores at genus and family levels, together with the lowest distance estimates between the observed and simulated samples. However, MAPseq showed the highest precision, with miscall rates consistently {<}2\%. Notably, QIIME 2 was the most computationally expensive tool, with CPU time and memory usage almost 2 and 30 times higher than MAPseq, respectively. Using the SILVA database generally yielded a higher recall than using Greengenes, while assignment results of different 16S rRNA variable sub-regions varied up to 40\% between samples analysed with the same pipeline. CONCLUSIONS: Our results support the use of either QIIME 2 or MAPseq for optimal 16S rRNA gene profiling, and we suggest that the choice between the two should be based on the level of recall, precision, and/or computational performance required.}
+      \field{issn}{2047-217X}
+      \field{journaltitle}{GigaScience}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Benchmarking taxonomic assignments based on {16S} {rRNA} gene profiling of the microbiota from commonly sampled environments}
+      \field{volume}{7}
+      \field{year}{2018}
+      \field{pages}{giy054}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/gigascience/giy054
+      \endverb
+      \keyw{Bacteria,Biodiversity,Databases,Genetic,Environmental Microbiology,Gastrointestinal Microbiome,Humans,Microbiota,Oceans and Seas,Phylogeny,Principal Component Analysis,RNA,Ribosomal,16S,Soil}
+    \endentry
+    \entry{lu_ultrafast_2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3a9bafc6f5116ef2f7d85aa4eac44399}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=77807756bbb6060dfad8032265d5333d}{%
+           family={Salzberg},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{55007f7fd5e6de13fc1e56025b20a618}
+      \strng{fullhash}{55007f7fd5e6de13fc1e56025b20a618}
+      \strng{bibnamehash}{55007f7fd5e6de13fc1e56025b20a618}
+      \strng{authorbibnamehash}{55007f7fd5e6de13fc1e56025b20a618}
+      \strng{authornamehash}{55007f7fd5e6de13fc1e56025b20a618}
+      \strng{authorfullhash}{55007f7fd5e6de13fc1e56025b20a618}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{For decades, 16S ribosomal RNA sequencing has been the primary means for identifying the bacterial species present in a sample with unknown composition. One of the most widely used tools for this purpose today is the QIIME (Quantitative Insights Into Microbial Ecology) package. Recent results have shown that the newest release, QIIME 2, has higher accuracy than QIIME, MAPseq, and mothur when classifying bacterial genera from simulated human gut, ocean, and soil metagenomes, although QIIME 2 also proved to be the most computationally expensive. Kraken, first released in 2014, has been shown to provide exceptionally fast and accurate classification for shotgun metagenomics sequencing projects. Bracken, released in 2016, then provided users with the ability to accurately estimate species or genus relative abundances using Kraken classification results. Kraken 2, which matches the accuracy and speed of Kraken 1, now supports 16S rRNA databases, allowing for direct comparisons to QIIME and similar systems.}
+      \field{issn}{2049-2618}
+      \field{journaltitle}{Microbiome}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Ultrafast and accurate {16S} {rRNA} microbial community analysis using {Kraken} 2}
+      \field{urlday}{9}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{124}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s40168-020-00900-2
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s40168-020-00900-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s40168-020-00900-2
+      \endverb
+    \endentry
+    \entry{odom_metagenomic_2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1246980a51f88a1141d4a7f0fd406a26}{%
+           family={Odom},
+           familyi={O\bibinitperiod},
+           given={Aubrey\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=045e2b26778c8f9e50325dc750837a23}{%
+           family={Faits},
+           familyi={F\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c5777fce48888a7e78411288d80c3cf9}{%
+           family={Castro-Nallar},
+           familyi={C\bibinithyphendelim N\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=01d50fc6e08df82dd4a2778156e14d87}{%
+           family={Crandall},
+           familyi={C\bibinitperiod},
+           given={Keith\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b9119a3e1938753255db1000475b7f53}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={W.\bibnamedelimi Evan},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{53e8b99c65fb2cd160ec0f2cffa26913}
+      \strng{fullhash}{dcdb604314e8b4f61fc5cc27a2384402}
+      \strng{bibnamehash}{53e8b99c65fb2cd160ec0f2cffa26913}
+      \strng{authorbibnamehash}{53e8b99c65fb2cd160ec0f2cffa26913}
+      \strng{authornamehash}{53e8b99c65fb2cd160ec0f2cffa26913}
+      \strng{authorfullhash}{dcdb604314e8b4f61fc5cc27a2384402}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Most experiments studying bacterial microbiomes rely on the PCR amplification of all or part of the gene for the 16S rRNA subunit, which serves as a biomarker for identifying and quantifying the various taxa present in a microbiome sample. Several computational methods exist for analyzing 16S amplicon sequencing. However, the most-used bioinformatics tools cannot produce high quality genus-level or species-level taxonomic calls and may underestimate the potential accuracy of these calls. We used 16S sequencing data from mock bacterial communities to evaluate the sensitivity and specificity of several bioinformatics pipelines and genomic reference libraries used for microbiome analyses, concentrating on measuring the accuracy of species-level taxonomic assignments of 16S amplicon reads. We evaluated the tools DADA2, QIIME 2, Mothur, PathoScope 2, and Kraken 2 in conjunction with reference libraries from Greengenes, SILVA, Kraken 2, and RefSeq. Profiling tools were compared using publicly available mock community data from several sources, comprising 136 samples with varied species richness and evenness, several different amplified regions within the 16S rRNA gene, and both DNA spike-ins and cDNA from collections of plated cells. PathoScope 2 and Kraken 2, both tools designed for whole-genome metagenomics, outperformed DADA2, QIIME 2 using the DADA2 plugin, and Mothur, which are theoretically specialized for 16S analyses. Evaluations of reference libraries identified the SILVA and RefSeq/Kraken 2 Standard libraries as superior in accuracy compared to Greengenes. These findings support PathoScope and Kraken 2 as fully capable, competitive options for genus- and species-level 16S amplicon sequencing data analysis, whole genome sequencing, and metagenomics data tools.}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Metagenomic profiling pipelines improve taxonomic classification for {16S} amplicon sequencing data}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{pages}{13957}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-023-40799-x
+      \endverb
+      \keyw{Bone Plates,Cercozoa,Humans,Metagenome,Metagenomics,Microbiota,Polyarteritis Nodosa,RNA,Ribosomal,16S}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
